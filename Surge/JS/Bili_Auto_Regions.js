@@ -77,7 +77,7 @@ let run = EnvInfo();
 
 async function SwitchRegion(play) {
 	const Group = $.read('BiliArea_Policy') || 'Biliauto'; //Your blibli policy group name.
-	const CN = $.read('BiliArea_CN') || 'Mainland'; //Your China sub-policy name.
+	const CN = $.read('BiliArea_CN') || 'DIRECT'; //Your China sub-policy name.
 	const TW = $.read('BiliArea_TW') || 'Taiwan'; //Your Taiwan sub-policy name.
 	const HK = $.read('BiliArea_HK') || 'Hong Kong'; //Your HongKong sub-policy name.
 	const DF = $.read('BiliArea_DF') || 'DIRECT'; //Sub-policy name used after region is blocked(e.g. url 404)
