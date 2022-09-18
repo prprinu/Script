@@ -87,9 +87,9 @@ async function SwitchRegion(play) {
 		let select;
 		if (/\u6e2f[\u4e00-\u9fa5]+\u5340|%20%E6%B8%AF&/.test(play)) {
 			const test = /\u53f0[\u4e00-\u9fa5]+\u5340/.test(play);
-			if (current != HK && (current == TW && test ? 0 : 1)) select = HK;
+			if (current != TW && (current == HK && test ? 0 : 1)) select = TW;
 		} else if (/\u53f0[\u4e00-\u9fa5]+\u5340|%20%E5%8F%B0&/.test(play)) {
-			if (current != TW) select = TW;
+			if (current != HK) select = HK;
 		} else if (play === -404) {
 			if (current != CN) select = CN;
 		} else if (current != DF) {
