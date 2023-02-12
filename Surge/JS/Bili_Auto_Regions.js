@@ -95,9 +95,9 @@ async function SwitchRegion(play) {
 		} else if (current != DF) {
 			select = DF;
 		}
-		//if ($.isQuanX && current === 'direct' && select === 'DIRECT') {
-		//	select = null; //avoid loops in some cases
-		//}
+		if ($.isQuanX && current === 'direct' && select === 'DIRECT') {
+			select = null; //avoid loops in some cases
+		}
 		return select;
 	})()
 
