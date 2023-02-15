@@ -76,7 +76,7 @@ let $ = nobyda();
 let run = EnvInfo();
 
 async function SwitchRegion(title, url, body) {
-	const Group = $.read('BiliArea_Policy') || '📺 DomesticMedia'; //Your blibli policy group name.
+	const Group = $.read('BiliArea_Policy') || 'BILIAUTO'; //Your blibli policy group name.
 	const CN = $.read('BiliArea_CN') || 'CN'; //Your China sub-policy name.
 	const TW = $.read('BiliArea_TW') || 'TW'; //Your Taiwan sub-policy name.
 	const HK = $.read('BiliArea_HK') || 'HK'; //Your HongKong sub-policy name.
